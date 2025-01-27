@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Item Name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Food Item Code"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/editTextItemName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Item Name"
+        android:inputType="text"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:layout_marginTop="90dp"/>
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Quantity"
+        android:layout_marginTop="110dp"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_marginTop="150dp"/>
+
+    <!-- Button to Show Popup with Filled Information -->
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="170dp"
+        android:hint="Address"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnShowPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Show Information"
+        android:layout_below="@id/editTextAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp" />
+
+    <!-- Button to Go to Next Page (OrderSummaryActivity) -->
+    <Button
+        android:id="@+id/btnNextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Order Now"
+        android:layout_below="@id/btnShowPopup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+</RelativeLayout>
